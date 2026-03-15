@@ -99,9 +99,9 @@ export default function S10Approach() {
           <div className="flex items-start gap-4">
             <div className="w-[2px] min-h-[50px] bg-brand-teal/40 rounded-full shrink-0 mt-1 self-stretch" />
             <p className="text-white/40 font-light font-body text-sm md:text-base italic leading-relaxed">
-              The constitution card is the product. The daily food card is the
-              retention mechanism. Don't build retention until you've proven
-              the product.
+              3 questions to start. One card immediately. One question per day
+              after that. By week two, the profile is complete — and the user
+              never felt like they were filling out a form.
             </p>
           </div>
         </motion.div>

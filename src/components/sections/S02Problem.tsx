@@ -10,7 +10,6 @@ const features = [
 
 const bullets = [
   'Every feature is a styled form that POSTs to Gemini',
-  'GlowCoach face scanning returns Math.random()',
   'Episodic consultation — no daily use case',
   'No defensibility — anyone can copy the prompts',
 ];
@@ -28,7 +27,7 @@ export default function S02Problem() {
           viewport={{ once: true }}
           className="text-xs tracking-[0.3em] uppercase text-white/40 font-body mb-4"
         >
-          Why the current app doesn't work
+          The problem we all see
         </motion.p>
 
         <motion.h2
@@ -67,7 +66,7 @@ export default function S02Problem() {
         </div>
 
         {/* Bullet points */}
-        <div className="space-y-5 max-w-2xl">
+        <div className="space-y-5 max-w-2xl mb-12">
           {bullets.map((bullet, i) => (
             <motion.div
               key={bullet}
@@ -82,6 +81,21 @@ export default function S02Problem() {
             </motion.div>
           ))}
         </div>
+
+        {/* Reframe */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.6 }}
+          viewport={{ once: true }}
+          className="max-w-2xl flex items-start gap-4"
+        >
+          <div className="w-[2px] min-h-[40px] bg-brand-teal/40 rounded-full shrink-0 self-stretch" />
+          <p className="text-white/45 text-sm md:text-base font-light font-body italic leading-relaxed">
+            These features aren't wasted — they become backend intelligence
+            that powers recommendations invisibly. The user just sees input and output.
+          </p>
+        </motion.div>
       </div>
     </section>
   );

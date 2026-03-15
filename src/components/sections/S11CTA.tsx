@@ -4,7 +4,7 @@ import GeometricOrb from '../shared/GeometricOrb';
 export default function S11CTA() {
   return (
     <section className="snap-section noise-overlay flex items-center justify-center relative bg-dark">
-      <GeometricOrb color="#14b8a6" size={600} className="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-40" />
+      <GeometricOrb color="#14b8a6" size={400} className="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-25" />
 
       <div className="relative z-10 text-center px-6 max-w-3xl">
         <motion.h2

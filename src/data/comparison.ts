@@ -11,9 +11,14 @@ export const comparisonRows: ComparisonRow[] = [
     triveda: 'Daily food companion',
   },
   {
-    dimension: 'Features',
-    current: '22 routes, shallow',
-    triveda: '5 screens, deep',
+    dimension: 'User sees',
+    current: '22 features to navigate',
+    triveda: 'Simple input/output \u2014 one card daily',
+  },
+  {
+    dimension: '22 features',
+    current: 'All user-facing, shallow',
+    triveda: 'Backend intelligence \u2014 powers recommendations invisibly',
   },
   {
     dimension: 'AI role',
@@ -38,6 +43,11 @@ export const comparisonRows: ComparisonRow[] = [
   {
     dimension: 'Personalization',
     current: 'None',
-    triveda: 'Learns from every food response',
+    triveda: 'Learns from every response \u2014 your little buddy',
+  },
+  {
+    dimension: 'Onboarding',
+    current: 'See all 22 features at once',
+    triveda: '3 questions \u2192 first card \u2192 learns over time',
   },
 ];

@@ -78,8 +78,29 @@ export default function S05DailyExperience() {
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.35 }}
               >
+                {/* Progressive profiling prompt */}
+                <div className="mb-3 mt-2 rounded-lg border border-brand-teal/20 bg-brand-teal/[0.06] p-3">
+                  <p className="text-brand-teal/70 text-[10px] font-body font-medium tracking-wide uppercase mb-1.5">
+                    Quick question
+                  </p>
+                  <p className="text-white/70 text-xs font-body font-light leading-relaxed">
+                    Do you tend to run hot or cold?
+                  </p>
+                  <div className="flex gap-2 mt-2">
+                    <span className="px-3 py-1 rounded-full text-[10px] font-body border border-white/15 text-white/50 bg-white/[0.04]">
+                      Hot
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-[10px] font-body border border-brand-teal/30 text-brand-teal bg-brand-teal/[0.08]">
+                      Cold
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-[10px] font-body border border-white/15 text-white/50 bg-white/[0.04]">
+                      Depends
+                    </span>
+                  </div>
+                </div>
+
                 {/* Scene header */}
-                <div className="mb-4 mt-2">
+                <div className="mb-4">
                   <p className="text-white/80 text-sm font-body font-medium">
                     {scene.title}
                   </p>

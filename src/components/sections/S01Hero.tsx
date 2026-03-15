@@ -13,9 +13,9 @@ export default function S01Hero() {
         }}
       />
 
-      <GeometricOrb color="#22c55e" size={500} className="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-      <GeometricOrb color="#ed7523" size={280} delay={0.5} className="top-[15%] right-[10%] hidden lg:block" />
-      <GeometricOrb color="#6b8156" size={220} delay={0.8} className="bottom-[20%] left-[8%] hidden lg:block" />
+      <GeometricOrb color="#22c55e" size={400} className="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-60" />
+      <GeometricOrb color="#ed7523" size={200} delay={0.5} className="top-[12%] right-[12%] hidden lg:block opacity-40" />
+      <GeometricOrb color="#6b8156" size={160} delay={0.8} className="bottom-[22%] left-[10%] hidden lg:block opacity-40" />
 
       <div className="relative z-10 text-center px-6 max-w-5xl">
         <motion.div

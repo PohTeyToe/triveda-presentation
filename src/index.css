@@ -33,7 +33,7 @@ html.snap-enabled {
 
 @media (min-width: 1024px) {
   html.snap-enabled {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
   }
 }
 
