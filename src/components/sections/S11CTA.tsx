@@ -25,9 +25,9 @@ export default function S11CTA() {
           className="space-y-6 text-left max-w-md mx-auto"
         >
           {[
-            'Constitution card first — 2 weeks to test the thesis',
-            'Kill-date built into the approach',
-            'Open for feedback',
+            'Constitution card + progressive profiling first',
+            'Daily food engine builds on top',
+            'Test with close contacts, gather real feedback',
           ].map((point, i) => (
             <motion.div
               key={point}

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { phases, metrics, killDate } from '../../data/timeline';
+import { phases, metrics } from '../../data/timeline';
 
 export default function S10Approach() {
   return (
@@ -14,7 +14,7 @@ export default function S10Approach() {
           viewport={{ once: true }}
           className="text-xs tracking-[0.3em] uppercase text-white/40 font-body mb-4"
         >
-          Strategic Approach
+          The Plan
         </motion.p>
 
         <motion.h2
@@ -24,7 +24,7 @@ export default function S10Approach() {
           viewport={{ once: true }}
           className="font-heading font-extralight text-[clamp(2.5rem,6vw,5rem)] leading-[0.9] mb-10"
         >
-          <span className="text-white/90">Test the Thesis First</span>
+          <span className="text-white/90">How We Build This</span>
         </motion.h2>
 
         {/* Opening callout */}
@@ -33,9 +33,9 @@ export default function S10Approach() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="font-heading text-2xl md:text-3xl font-light text-brand-terracotta/80 mb-14"
+          className="font-heading text-2xl md:text-3xl font-light text-brand-teal/80 mb-14"
         >
-          NOT a 7-week build.
+          Start simple. Build on what works.
         </motion.p>
 
         {/* Two-phase timeline */}
@@ -60,11 +60,6 @@ export default function S10Approach() {
                 <span className="text-white/30 text-sm font-body">
                   {phase.weeks}
                 </span>
-                {i === 1 && (
-                  <span className="px-2.5 py-0.5 rounded-full text-[10px] tracking-wide font-body border border-brand-terracotta/40 text-brand-terracotta/80 bg-brand-terracotta/[0.08]">
-                    IF validated
-                  </span>
-                )}
               </div>
 
               <h3 className="font-heading text-xl font-light text-white/85 mb-5">
@@ -106,62 +101,15 @@ export default function S10Approach() {
           </div>
         </motion.div>
 
-        {/* Kill-date callout */}
+        {/* KPIs to track */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          viewport={{ once: true }}
-          className="rounded-2xl border border-red-500/20 bg-red-500/[0.04] backdrop-blur-sm p-8 max-w-3xl mb-14"
-        >
-          <h4 className="font-heading text-lg font-light text-red-400/90 mb-4">
-            Kill-date
-          </h4>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-            <div>
-              <p className="text-[11px] tracking-wide uppercase text-white/30 font-body mb-1">
-                Trigger
-              </p>
-              <p className="text-white/70 font-light font-body text-sm">
-                {killDate.trigger}
-              </p>
-            </div>
-            <div>
-              <p className="text-[11px] tracking-wide uppercase text-white/30 font-body mb-1">
-                Target
-              </p>
-              <p className="text-white/70 font-light font-body text-sm">
-                {killDate.target}
-              </p>
-            </div>
-            <div>
-              <p className="text-[11px] tracking-wide uppercase text-white/30 font-body mb-1">
-                Kill at
-              </p>
-              <p className="text-red-400/80 font-light font-body text-sm">
-                {killDate.kill}
-              </p>
-            </div>
-            <div>
-              <p className="text-[11px] tracking-wide uppercase text-white/30 font-body mb-1">
-                Timeline
-              </p>
-              <p className="text-white/70 font-light font-body text-sm">
-                {killDate.timeline}
-              </p>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Success metrics */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
           viewport={{ once: true }}
         >
           <p className="text-xs tracking-[0.3em] uppercase text-white/40 font-body mb-6">
-            Success Metrics
+            KPIs to Track
           </p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-3xl">
             {metrics.map((m, i) => (
@@ -169,7 +117,7 @@ export default function S10Approach() {
                 key={m.label}
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.8 + i * 0.1 }}
+                transition={{ duration: 0.5, delay: 0.7 + i * 0.1 }}
                 viewport={{ once: true }}
                 className="rounded-xl border border-white/[0.08] bg-white/[0.04] backdrop-blur-sm p-5"
               >

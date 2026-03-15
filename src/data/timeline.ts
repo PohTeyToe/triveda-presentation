@@ -17,12 +17,12 @@ export const phases: Phase[] = [
       'Weave in 1 question per day as part of the daily experience',
       'Full profile builds itself by week 2 \u2014 user never fills out a form',
       'Beautiful shareable constitution card output',
-      'Deploy, share with close contacts, watch what happens',
+      'Deploy, share with close contacts, gather feedback',
     ],
   },
   {
     label: 'Phase 2',
-    weeks: 'Weeks 3\u20137 (IF validated)',
+    weeks: 'Weeks 3\u20137',
     color: '#ed7523',
     title: 'Daily Food Engine',
     bullets: [
@@ -30,7 +30,7 @@ export const phases: Phase[] = [
       'Three-call LLM architecture',
       'Deterministic convergence detection',
       'Weather + season integration',
-      'Feedback loop',
+      'Feedback loop \u2014 the app learns and gets better over time',
     ],
   },
 ];
@@ -41,10 +41,3 @@ export const metrics = [
   { label: 'Tradition expansion', target: '>40% non-Ayurvedic' },
   { label: 'Feedback engagement', target: '>40%' },
 ];
-
-export const killDate = {
-  trigger: 'Day 7 return rate',
-  target: '20%',
-  kill: '12%',
-  timeline: '8 weeks post-launch',
-};

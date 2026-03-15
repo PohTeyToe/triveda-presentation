@@ -76,15 +76,15 @@ Switch to **"Disagreement"** tab, click **"Why?"**:
 
 ## S10 — Approach
 
-> "Phase 1: two weeks. Progressive profiling — 3 questions to start, first card immediately, one question per day after. Full profile by week two, user never felt like filling out a form. Deploy it, share with close contacts, see what happens."
+> "Here's how we build this. Phase 1 is two weeks — progressive profiling. 3 questions to start, first card immediately, one question per day after. Full profile by week two, user never felt like filling out a form. Deploy it, share with close contacts, gather feedback."
 
-> "Phase 2 only happens if Phase 1 validates. Kill-date built in — day 7 return rate below 12%, we stop."
+> "Phase 2 is the daily food engine — scoring database, three-tradition reasoning, weather integration. It builds on top of the constitution card."
 
 ---
 
 ## S11 — CTA
 
-> "That's it. Constitution card with progressive profiling, two weeks, test with real people. What questions do you have?"
+> "That's the plan. Constitution card with progressive profiling first, daily food engine on top. Ready to start building."
 
 ---
 
