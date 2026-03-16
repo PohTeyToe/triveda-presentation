@@ -1,6 +1,7 @@
 import { useScrollProgress } from './hooks/useScrollProgress';
 import ProgressBar from './components/shared/ProgressBar';
 import Navigation from './components/shared/Navigation';
+import ChatFab from './components/shared/ChatFab';
 import S01Hero from './components/sections/S01Hero';
 import S02Problem from './components/sections/S02Problem';
 import S03Insight from './components/sections/S03Insight';
@@ -20,6 +21,7 @@ export default function PresentationPage() {
     <>
       <ProgressBar progress={progress} />
       <Navigation activeSection={activeSection} />
+      <ChatFab visible={activeSection > 0} />
       <main>
         <S01Hero />
         <S02Problem />
