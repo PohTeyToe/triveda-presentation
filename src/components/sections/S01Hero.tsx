@@ -56,6 +56,29 @@ export default function S01Hero() {
         >
           Know your constitution. Eat for it. Understand why.
         </motion.p>
+
+        <motion.a
+          href="https://triveda-research-chat.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 1.6 }}
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.97 }}
+          className="mt-10 inline-flex items-center gap-3 px-6 py-3 rounded-full border border-brand-teal/20 bg-brand-teal/[0.06] hover:bg-brand-teal/[0.12] hover:border-brand-teal/40 transition-all duration-300 group cursor-pointer"
+        >
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-teal opacity-50" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-teal/80" />
+          </span>
+          <span className="text-sm text-white/50 group-hover:text-white/80 transition-colors font-body tracking-wide">
+            Ask the research anything
+          </span>
+          <svg className="w-3.5 h-3.5 text-white/30 group-hover:text-brand-teal group-hover:translate-x-0.5 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+          </svg>
+        </motion.a>
       </div>
 
       <motion.div
